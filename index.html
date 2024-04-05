@@ -13,6 +13,7 @@
 </head>
 <body>
     
+    
     <div class="container mt-5 animate__animated animate__fadeIn">
         <h1 class="mb-4">Pesquisa de CEP</h1>
         <form>
@@ -21,10 +22,10 @@
                 <input type="text" class="form-control" id="meuInput" placeholder="Exemplo: 01001000" required>
             </div>
             <button type="button" class="btn btn-primary" onclick="consultarCEP()">Pesquisar</button>
-            <button type="button" onclick="limparTela()" class="btn btn-danger " id="liveAlertBtn">limpar <i class="bi bi-basket"></i></button>
+            <button type="button" onclick="limparTela()" id="danger" class=" btn btn-danger  ">limpar <i class="bi bi-basket"></i></button>
         
-            <div id="liveAlertPlaceholder"></div>
-            <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+            
+           
         
         <div id="result" class="mt-4"></div>
         
