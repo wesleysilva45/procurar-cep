@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de CEP</title>
+    <script src="script.js"></script>
+    <!-- Inclua o Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Inclua o Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container mt-5 animate__animated animate__fadeIn">
+        <h1 class="mb-4">Pesquisa de CEP</h1>
+        <form>
+            <div class="mb-3">
+                <label for="cepInput" class="form-label">Digite o CEP:</label>
+                <input type="text" class="form-control" id="meuInput" placeholder="Exemplo: 01001000" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="consultarCEP()">Pesquisar</button>
+            <button type="button" onclick="limparTela()" class="btn btn-danger " id="liveAlertBtn">limpar <i class="bi bi-basket"></i></button>
+        
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+        
+        <div id="result" class="mt-4"></div>
+        
+        </form>
+
+        
+        
+    </div>
+
+    <!-- Inclua o Bootstrap JS (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  
+</body>
+</html>
